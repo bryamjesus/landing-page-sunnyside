@@ -159,7 +159,7 @@ HEADER
 SERVICE
 *******************/
 .services {
-  width: 100vw;
+  width: 100%;
   display: grid;
   grid-template-rows: repeat(2, 300px 450px);
 }
