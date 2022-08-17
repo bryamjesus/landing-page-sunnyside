@@ -436,3 +436,45 @@ GALLERY
     background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
   }
 }
+
+/********************
+FOOTER
+*******************/
+.footer {
+  background-color: #91d4c3;
+  text-align: center;
+}
+
+.footer__logo {
+  width: 200px;
+}
+
+.footer__nav {
+  max-width: 400px;
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
+  color: var(--dark-moderate-cyan);
+  text-decoration: none;
+  padding: 1.5rem 0 3rem;
+}
+
+.footer__social {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer__link {
+    padding: 2rem 0 3rem;
+  }
+}
