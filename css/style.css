@@ -52,7 +52,7 @@ HEADER
 }
 
 .header__title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: var(--font-fraunces);
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -120,6 +120,10 @@ HEADER
 @media (min-width: 768px) {
   .header {
     background-image: url("../images/desktop/image-header.jpg");
+  }
+
+  .header__title {
+    font-size: 2.5rem;
   }
 
   .nav__hamburguer {
@@ -254,7 +258,7 @@ SERVICE
 }
 
 @media (min-width: 1200px) {
-  .services__content{
+  .services__content {
     padding: 2rem 8.5rem;
   }
 }
@@ -321,5 +325,62 @@ JOBS
   .jobs__section {
     padding-right: 10rem;
     padding-left: 10rem;
+  }
+}
+
+/********************
+TESTIMONIALS
+*******************/
+.testimonials {
+  text-align: center;
+}
+
+.testimonials__title {
+  font-size: 1rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--dark-grayish-blue);
+  font-family: var(--font-fraunces);
+}
+
+.testimonials__container {
+  padding: 60px 0;
+  display: grid;
+  gap: 6rem;
+}
+
+.testimonials__img {
+  width: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonials__paragraph {
+  color: var(--dark-blue);
+  line-height: 1.5;
+  font-size: 1.28rem;
+  margin: 1.7rem 0;
+}
+
+.testimonials__name {
+  color: var(--very-dark-desaturated-blue);
+  font-family: var(--font-fraunces);
+  font-weight: 900;
+  margin-bottom: 0.7rem;
+}
+
+.testimonials__job {
+  color: var(--grayish-blue);
+}
+
+@media (min-width: 768px) {
+  .testimonials__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .testimonials__paragraph {
+    margin: 2.5rem 0;
   }
 }
